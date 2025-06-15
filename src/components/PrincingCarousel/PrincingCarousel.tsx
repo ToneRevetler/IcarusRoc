@@ -110,29 +110,13 @@ export default function PricingCarousel() {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: getTransform() }}>
               {pricingCards.map((card) => (
                 <div key={card.id} className="w-full flex-shrink-0 px-2">
-                  <div className="border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
-                    {/* Card Header */}
-                    <h3 className="font-semibold text-lg mb-3">{card.title}</h3>
-
-                    {/* Description */}
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{card.description}</p>
-
-                    {/* Preview Image */}
-                    <div className="mb-4">
-                      <img
-                        src="/placeholder.svg?height=128&width=280"
-                        alt="Landing page preview"
-                        className="w-full h-32 object-cover rounded-lg border border-gray-200"
-                      />
-                    </div>
-
-                    {/* Pricing */}
-                    <div className="text-center">
-                      <p className="text-sm text-gray-600 mb-1">A partir de</p>
-                      <p className="text-xl text-icarus-dark-blue font-bold mb-2">{card.price}</p>
-                      <p className="text-xs text-gray-500">{card.deadline}</p>
-                    </div>
-                  </div>
+                  <PricingCard
+                    title={card.title}
+                    description={card.description}
+                    price={card.price}
+                    deadline={card.deadline}
+                    src={card.src}
+                  />
                 </div>
               ))}
             </div>

@@ -1,0 +1,7 @@
+.text-icarus-dark-blue {
+  color: var(--icarus-dark-blue);
+}
+
+.bg-icarus-dark-blue {
+  background-color: var(--icarus-dark-blue);
+}

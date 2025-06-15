@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// import Header from './components/header/Header';
+import NavBar from "@/components/Header/NavBar";
+import Footer from '@/components/Footer';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +16,9 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const mainFont = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +32,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${mainFont.className} antialiased`}
       >
+        <NavBar />
         {children}
+        <Footer />
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
       </body>
     </html>
   );
