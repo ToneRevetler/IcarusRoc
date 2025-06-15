@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { IoChevronBack, IoChevronForward } from "react-icons/io5"
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 import PricingCard from "./PricingCard"
 
 export default function PricingCarousel() {
