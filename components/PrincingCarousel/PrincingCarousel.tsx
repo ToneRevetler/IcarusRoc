@@ -2,59 +2,87 @@
 
 import { useState } from "react"
 import { IoChevronBack, IoChevronForward } from "react-icons/io5"
-import { Button } from "../ui/button"
+import { Button } from "@/../components/ui/button"
 import PricingCard from "./PricingCard"
 
 export default function PricingCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const pricingCards = [
-    {
-      id: 1,
-      title: "Landing Page Profissional",
-      description:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      price: "R$ 9999,99",
-      deadline: "Prazo médio: 6 dias úteis",
-      src: "/assets/Princing card.webp",
-    },
-    {
-      id: 2,
-      title: "Landing Page Profissional",
-      description:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      price: "R$ 9999,99",
-      deadline: "Prazo médio: 6 dias úteis",
-      src: "/assets/Princing card.webp",
-    },
-    {
-      id: 3,
-      title: "Landing Page Profissional",
-      description:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      price: "R$ 9999,99",
-      deadline: "Prazo médio: 6 dias úteis",
-      src: "/assets/Princing card.webp",
-    },
-    {
-      id: 4,
-      title: "Landing Page Profissional",
-      description:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      price: "R$ 9999,99",
-      deadline: "Prazo médio: 6 dias úteis",
-      src: "/assets/Princing card.webp",
-    },
-    {
-      id: 5,
-      title: "Landing Page Profissional",
-      description:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      price: "R$ 9999,99",
-      deadline: "Prazo médio: 6 dias úteis",
-      src: "/assets/Princing card.webp",
-    },
-  ]
+  {
+    id: 0,
+    title: "Landing Page Profissional",
+    description:
+      "Uma página otimizada para conversões, com design moderno e performance avançada. Ideal para captar leads ou apresentar seu negócio.",
+    price: "R$ 999,99",
+    deadline: "Prazo médio: 1 semana",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 1,
+    title: "Rework Visual de Site",
+    description:
+      "Atualize o visual e usabilidade do seu site sem perder conteúdo. Mais moderno, rápido e impactante.",
+    price: "R$ 690,00",
+    deadline: "Prazo médio: 1 semana",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 2,
+    title: "Loja Virtual Sob Medida",
+    description:
+      "Crie uma loja online com sua identidade. Planos Essencial, Profissional e Avançado adaptados ao seu negócio.",
+    price: "A partir de R$ 4.990,00",
+    deadline: "Prazo médio: 2 a 4 semanas",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 3,
+    title: "Integração com Plataformas",
+    description:
+      "Conecte seu site a ferramentas como CRM, marketplaces, meios de pagamento e plataformas como Shopify ou WordPress.",
+    price: "Sob consulta",
+    deadline: "Prazo médio: até 10 dias úteis",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 4,
+    title: "Performance e Responsividade",
+    description:
+      "Ajustes de desempenho para carregar mais rápido e funcionar bem em qualquer dispositivo.",
+    price: "A partir de R$ 550,00",
+    deadline: "Prazo médio: 2 semanas",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 5,
+    title: "Portal de Conteúdo / Blog",
+    description:
+      "Criação de blog integrado com layout personalizado e foco em SEO.",
+    price: "A partir de R$ 790,00",
+    deadline: "Prazo médio: 2 semanas",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 6,
+    title: "Hospedagem + Domínio",
+    description:
+      "Configuração completa de hospedagem e domínio com estabilidade e segurança.",
+    price: "Sob consulta",
+    deadline: "Prazo médio: 1 a 3 dias úteis",
+    src: "/assets/Princing card.webp",
+  },
+  {
+    id: 7,
+    title: "Automação com Scripts",
+    description:
+      "Automatize tarefas com scripts em Python, Shell, BAT ou Bash. Agilidade para seu negócio.",
+    price: "A partir de R$ 490,00",
+    deadline: "Prazo sob demanda",
+    src: "/assets/Princing card.webp",
+  },
+];
+
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === pricingCards.length - 1 ? 0 : prevIndex + 1))
@@ -110,29 +138,13 @@ export default function PricingCarousel() {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: getTransform() }}>
               {pricingCards.map((card) => (
                 <div key={card.id} className="w-full flex-shrink-0 px-2">
-                  <div className="border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
-                    {/* Card Header */}
-                    <h3 className="font-semibold text-lg mb-3">{card.title}</h3>
-
-                    {/* Description */}
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{card.description}</p>
-
-                    {/* Preview Image */}
-                    <div className="mb-4">
-                      <img
-                        src="/placeholder.svg?height=128&width=280"
-                        alt="Landing page preview"
-                        className="w-full h-32 object-cover rounded-lg border border-gray-200"
-                      />
-                    </div>
-
-                    {/* Pricing */}
-                    <div className="text-center">
-                      <p className="text-sm text-gray-600 mb-1">A partir de</p>
-                      <p className="text-xl text-icarus-dark-blue font-bold mb-2">{card.price}</p>
-                      <p className="text-xs text-gray-500">{card.deadline}</p>
-                    </div>
-                  </div>
+                  <PricingCard
+                    title={card.title}
+                    description={card.description}
+                    price={card.price}
+                    deadline={card.deadline}
+                    src={card.src}
+                  />
                 </div>
               ))}
             </div>
