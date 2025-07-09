@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Button } from "../ui/button"
+import { Button } from "@/../components/ui/button"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -70,12 +70,13 @@ export default function ContactForm() {
 
   const services = [
     "Landing Page Profissional",
-    "Landing Page Profissional",
-    "Landing Page Profissional",
-    "Landing Page Profissional",
+    "Rework Visual de Site",
+    "Loja Virtual Sob Medida",
+    "Integração com Plataformas",
+    "Outro",
   ]
 
-  const additionalServices = ["Landing Page Profissional", "Landing Page Profissional", "Landing Page Profissional"]
+  const additionalServices = ["Portal de Conteúdo / Blog", "Hospedagem + Domínio", "Automação com Scripts", "Performance e Responsividade"]
 
   return (
     <section className=" bg-black">
@@ -93,7 +94,7 @@ export default function ContactForm() {
             <div className="space-y-8">
               {/* First Service Group */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Landing Page Profissional</h3>
+                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Serviços base</h3>
                 <div className="space-y-3">
                   {services.map((service, index) => (
                     <label key={index} className="flex items-center space-x-3 cursor-pointer">
@@ -110,7 +111,7 @@ export default function ContactForm() {
 
               {/* Second Service Group */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Landing Page Profissional</h3>
+                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Serviços adicionais</h3>
                 <div className="space-y-3">
                   {additionalServices.map((service, index) => (
                     <label key={index} className="flex items-center space-x-3 cursor-pointer">
