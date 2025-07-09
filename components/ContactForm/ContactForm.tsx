@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Button } from "../ui/button"
+import { Button } from "@/../components/ui/button"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -70,12 +70,12 @@ export default function ContactForm() {
 
   const services = [
     "Landing Page Profissional",
-    "Landing Page Profissional",
-    "Landing Page Profissional",
-    "Landing Page Profissional",
+    "Rework Visual de Site",
+    "Loja Virtual Sob Medida",
+    "Integração com Plataformas",
   ]
 
-  const additionalServices = ["Landing Page Profissional", "Landing Page Profissional", "Landing Page Profissional"]
+  const additionalServices = ["Portal de Conteúdo / Blog", "Hospedagem + Domínio", "Automação com Scripts", "Performance e Responsividade"]
 
   return (
     <section className=" bg-black">
@@ -93,7 +93,7 @@ export default function ContactForm() {
             <div className="space-y-8">
               {/* First Service Group */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Landing Page Profissional</h3>
+                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Serviços base</h3>
                 <div className="space-y-3">
                   {services.map((service, index) => (
                     <label key={index} className="flex items-center space-x-3 cursor-pointer">
@@ -110,7 +110,7 @@ export default function ContactForm() {
 
               {/* Second Service Group */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Landing Page Profissional</h3>
+                <h3 className="text-xl font-semibold mb-4 text-icarus-dark-blue">Serviços adicionais</h3>
                 <div className="space-y-3">
                   {additionalServices.map((service, index) => (
                     <label key={index} className="flex items-center space-x-3 cursor-pointer">
@@ -197,7 +197,7 @@ export default function ContactForm() {
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
 
-                  <Button variant="cta" type="submit" className="px-8 py-3 bg-[#FFB703]hover:bg-[#FFB703]">
+                  <Button variant="cta" type="submit" className="px-8 py-3 bg-[#FFB703]hover:bg-[#FFB703] hover:cursor-pointer">
                     Enviar
                   </Button>
                 </div>
@@ -205,7 +205,7 @@ export default function ContactForm() {
                 {/* Email Alternative */}
                 <p className="text-sm text-gray-600 pt-4">
                   Se preferir envie para o email{" "}
-                  <a href="mailto:me.envio@pix.com" className="text-[#FFB703] hover:underline">
+                  <a href="mailto:me.envio@pix.com" className="text-[#FFB703] hover:underline  ">
                     me.envio@pix.com
                   </a>
                 </p>
