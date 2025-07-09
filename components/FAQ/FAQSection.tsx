@@ -1,20 +1,35 @@
 import React from 'react';
 import Question from './Question';
 
+
 const faqs = [
   {
-    question: 'What is Icarus Roc?',
-    answer: 'Icarus Roc is a platform that provides ...',
+    question: "O que é a Icarus Roc?",
+    answer:
+      "A Icarus Roc é uma agência digital especializada na criação de sites, plataformas e chatbots personalizados. Atuamos com foco em posicionamento humano e identidade visual, entregando soluções sob medida com escuta ativa e atendimento transparente.",
   },
   {
-    question: 'How do I get started?',
-    answer: 'To get started, simply sign up and ...',
+    question: "Como faço para começar?",
+    answer:
+      "É simples! Você pode entrar em contato pelo nosso formulário no site, enviar uma mensagem pelo WhatsApp ou por e-mail. Nossa equipe vai te acompanhar desde a ideia até a entrega, com suporte gratuito no primeiro mês.",
   },
   {
-    question: 'Is there customer support?',
-    answer: 'Yes, we offer 24/7 customer support ...',
+    question: "A Icarus Roc oferece suporte ao cliente?",
+    answer:
+      "Sim. Todos os nossos projetos incluem suporte gratuito por tempo determinado. Sites, lojas virtuais e integrações contam com acompanhamento técnico para garantir que tudo funcione com estabilidade e segurança.",
+  },
+  {
+    question: "Quais tipos de serviço vocês oferecem?",
+    answer:
+      "Desenvolvemos landing pages, e-commerces sob medida, blogs, portais de conteúdo, automações com scripts, integrações com plataformas como WordPress e Shopify, além de hospedagem e configuração de domínio.",
+  },
+  {
+    question: "Vocês atendem fora de Indaiatuba/SP?",
+    answer:
+      "Sim! Embora sejamos a menor e melhor companhia de sites da região, nosso atendimento é 100% online e personalizado. Atendemos clientes de todo o Brasil e até fora dele.",
   },
 ];
+
 
 const FAQSection: React.FC = () => {
   return (
