@@ -49,3 +49,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.footer-bg {
+  background-color: #0a0e2a; /* Azul escuro ou personalizado */
+}
+
