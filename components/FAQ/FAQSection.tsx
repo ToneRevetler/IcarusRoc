@@ -1,6 +1,7 @@
 import React from 'react';
 import Question from './Question';
 
+
 const faqs = [
   {
     question: "O que é a Icarus Roc?",
@@ -28,6 +29,7 @@ const faqs = [
       "Sim! Embora sejamos a menor e melhor companhia de sites da região, nosso atendimento é 100% online e personalizado. Atendemos clientes de todo o Brasil e até fora dele.",
   },
 ];
+
 
 const FAQSection: React.FC = () => {
   return (

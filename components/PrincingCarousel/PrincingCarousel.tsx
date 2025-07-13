@@ -14,7 +14,7 @@ export default function PricingCarousel() {
     title: "Landing Page Profissional",
     description:
       "Uma página otimizada para conversões, com design moderno e performance avançada. Ideal para captar leads ou apresentar seu negócio.",
-    price: "R$ 999,99",
+    price: "R$ 997,99",
     deadline: "Prazo médio: 1 semana",
     src: "/assets/Princing card.webp",
   },

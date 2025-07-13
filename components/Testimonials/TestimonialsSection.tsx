@@ -1,39 +1,40 @@
 import { IoMdQuote } from "react-icons/io";
 
 export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      id: 1,
-      quote:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      author: "Leonardo Marconi",
-    },
-    {
-      id: 2,
-      quote:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      author: "Leonardo Marconi",
-    },
-    {
-      id: 3,
-      quote:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      author: "Leonardo Marconi",
-    },
-    {
-      id: 4,
-      quote:
-        "Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.Uma página otimizada para conversão, focada em apresentar seu produto ou serviço de forma clara e atrativa. Ideal para campanhas e lançamentos.",
-      author: "Leonardo Marconi",
-    },
-  ];
+const testimonials = [
+  {
+    id: 1,
+    quote:
+      "O atendimento da Icarus Roc me surpreendeu desde o primeiro contato. O site que eles criaram não só reflete minha marca, mas converte muito mais. Foi como ver minha ideia ganhar forma, com suporte real e sem enrolação.",
+    author: "Geraldo Antonio – Consultor de Marketing",
+  },
+  {
+    id: 2,
+    quote:
+      "Trabalhar com a Icarus foi como ter uma equipe de tecnologia dentro do meu negócio. A landing page ficou incrível, moderna e rápida. A comunicação foi simples, direta e humana. Recomendo de olhos fechados!",
+    author: "Amanda Costa – Empreendedora",
+  },
+  {
+    id: 3,
+    quote:
+      "Minha loja virtual precisava de vida. Eles entenderam meu público e criaram uma experiência fluida. E o melhor: mesmo depois da entrega, o suporte foi constante. Essa atenção faz toda diferença!",
+    author: "Carlos Ramos – Varejo Online",
+  },
+  {
+    id: 4,
+    quote:
+      "Precisávamos de uma solução sob medida para integrar sistemas internos com nosso CRM. A Icarus não só entregou com excelência como nos ensinou a manter tudo funcionando. Parceria que virou confiança!",
+    author: "Letícia Mendes – Gerente de Projetos",
+  },
+];
+
 
   return (
     <section className="py-12 max-w-7xl mx-auto container px-4 md:px-0 lg:px-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-icarus-dark-blue">
-          One platform,{" "}
-          <span className="text-[#FFB703]">four powerful </span>use cases
+          Uma Plataforma {" "}
+          <span className="text-[#FFB703]">Soluões Poderosas</span> Personalizadas
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Junte-se a melhor e menor companhia de sites de Indaiatuba/SP

@@ -46,7 +46,7 @@ export default function WhoWeAreSection() {
         {/* Imagem */}
         <div className="w-full">
           <Image
-            src="/assets/quem-somos.png" // substituído por imagem existente
+            src="/assets/humanizado.png" // substituído por imagem existente
             alt="Equipe da agência"
             width={700}
             height={400}
