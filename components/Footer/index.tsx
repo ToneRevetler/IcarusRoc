@@ -1,50 +1,62 @@
 export default function Footer() {
     return (
-        <footer className="footer-bg text-white py-8">
-            <section className="container max-w-7xl mx-auto px-4 flex flex-col items-center space-y-8">
+        <footer className="bg-icarus-dark-blue text-white py-10">
+            <div className="max-w-7xl mx-auto px-4 flex flex-col space-y-10">
 
-                {/* Linha 1: Logo alinhada com a primeira coluna */}
-                <div className="w-full flex justify-start">
-                    <img src="/assets/Icarus_Logo_Light.png" alt="Icarus Roc Logo" className="w-22 h-24" />
+                {/* LOGO */}
+                <div className="flex justify-start">
+                    <img src="/assets/Icarus_Logo_Dark.png" alt="Icarus Roc Logo" className="w-20 h-auto" />
                 </div>
 
-                {/* Linha 2: Textos alinhados e espaçados */}
-                <div className="w-full grid grid-cols-6 justify-between gap-4 text-icarus-dark-blue">
-                    <div className="flex flex-col items-start w-full sm:w-1/5">
-                        <a href="#" className="hover:text-gray-500 transition ">Feature</a>
-                        <a href="#" className="hover:text-gray-500 transition  mt-2">Feature</a>
+                {/* GRID DE LINKS E FRASE */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-sm sm:text-base">
+
+                    {/* Coluna 1 */}
+                    <div className="space-y-2">
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
                     </div>
 
-                    <div className="flex flex-col items-start w-full    sm:w-1/5">
-                        <a href="#" className="hover:text-gray-500 transition ">Feature</a>
-                        <a href="#" className="hover:text-gray-500 transition  mt-2">Feature</a>
+                    {/* Coluna 2 */}
+                    <div className="space-y-2">
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
                     </div>
 
-                    <div className="flex flex-col items-start w-full sm:w-1/5">
-                        <a href="#" className="hover:text-gray-500 transition ">Feature</a>
-                        <a href="#" className="hover:text-gray-500 transition  mt-2">Feature</a>
+                    {/* Coluna 3 */}
+                    <div className="space-y-2">
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
                     </div>
 
-                    <div className="flex flex-col items-start w-full sm:w-1/5">
-                        <a href="#" className="hover:text-gray-500 transition ">Feature</a>
-                        <a href="#" className="hover:text-gray-500 transition  mt-2">Feature</a>
+                    {/* Coluna 4 */}
+                    <div className="space-y-2">
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
+                        <a href="#" className="hover:text-gray-400 transition">Feature</a>
                     </div>
 
-                    <div className="row-start-1 row-end-2 col-start-5 col-end-7  w-full sm:w-3/5">
-                        <span className="text-gray-500 transition ">"With this level of service, I'm sure I'll be a long and happy customer with Yola."
-                          <br />  — Helena, Gozo, Malta</span>
+                    {/* Coluna 5 - Frase */}
+                    <div className="sm:col-span-2 lg:col-span-1 text-gray-300 italic">
+                        <p>
+                            "Com este nível de serviço, tenho certeza de que serei um cliente longo e feliz com a Icarus."
+                            <br />
+                            — Geraldo, Amanda, Carlos
+                        </p>
                     </div>
                 </div>
 
-                {/* Linha 3: Texto único alinhado ao centro */}
-                <div className="w-full text-left flex gap-4 text-icarus-dark-blue text-sm py-8 border-gray-300 border-t">
-                    © 2025 Icarus Roc Inc. All rights reserved.
-                    <a href="#" className="hover:text-gray-500 underline transition">Privacy Policy</a> |
-                    <a href="#" className="hover:text-gray-500 underline transition">Terms of Service</a> |
-                    <a href="#" className="hover:text-gray-500 underline transition">Data Processing</a>
+                {/* LINHA FINAL */}
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs sm:text-sm text-gray-400 border-t border-gray-600 pt-6 space-y-2 sm:space-y-0 sm:space-x-4">
+                    <span>© 2025 Icarus Roc Inc. Todos os direitos reservados.</span>
+                    <div className="space-x-2">
+                        <a href="#" className="hover:text-white underline">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#" className="hover:text-white underline">Terms of Service</a>
+                        <span>|</span>
+                        <a href="#" className="hover:text-white underline">Data Processing</a>
+                    </div>
                 </div>
-
-            </section>
+            </div>
         </footer>
     );
 }
