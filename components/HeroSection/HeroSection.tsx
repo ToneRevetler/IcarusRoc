@@ -5,7 +5,7 @@ import CtaButton from "../CtaButton";
 
 export default function HeroSection() {
   return (
-    <section className="bg-white text-gray-900">
+    <section className="bg-white text-gray-900" id="hero-section">
       <div className="max-w-7xl mx-auto px-4 md:pt-16 pt-8 grid md:grid-cols-2 gap-16 items-center">
         {/* Texto principal */}
         <div>

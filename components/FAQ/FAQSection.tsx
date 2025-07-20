@@ -33,7 +33,7 @@ const faqs = [
 
 const FAQSection: React.FC = () => {
   return (
-    <section className=" mx-auto flex justify-center bg-gray-300 mb-10 pb-20 pt-4 ">
+    <section className=" mx-auto flex justify-center bg-gray-300 pb-20 pt-4 ">
       <div className='max-w-7xl w-full container px-4 md:px-0 lg:px-8'>
         <h2 className="text-3xl text-center font-bold my-8 text-icarus-dark-blue">Frequently Asked Questions</h2>
         <div className='gap-4 grid'>

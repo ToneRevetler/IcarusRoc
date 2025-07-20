@@ -4,7 +4,7 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import DevelopmentProcessSection from "../../components/DevelopmentProcess";
 import FAQSection from "../../components/FAQ/FAQSection";
 import TestimonialsSection from "../../components/Testimonials/TestimonialsSection";
-import PricingCarousel from "../../components/PrincingCarousel/PrincingCarousel";
+import PricingCarousel from "../../components/PricingCarousel/PricingCarousel";
 import ContactForm from "../../components/ContactForm/ContactForm";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
     <DevelopmentProcessSection />
     <PricingCarousel />
     <TestimonialsSection />
-    < ContactForm />
+    <ContactForm />
     <FAQSection />
   </>
   );

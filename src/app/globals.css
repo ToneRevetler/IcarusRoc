@@ -8,6 +8,8 @@
   --foreground: #171717;
   --icarus-yellow: #ffb703;
   --icarus-dark-blue: #023047;
+  --icarus-light-gray: #f7f7f7;
+
 }
 
 @theme inline {
@@ -54,3 +56,6 @@ html {
   background-color: #0a0e2a; /* Azul escuro ou personalizado */
 }
 
+.bg-icarus-gray {
+  background-color: var(--icarus-light-gray); /* Cor cinza claro */
+}

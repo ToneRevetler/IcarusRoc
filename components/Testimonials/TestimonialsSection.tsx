@@ -30,7 +30,7 @@ const testimonials = [
 
 
   return (
-    <section className="py-12 max-w-7xl mx-auto container px-4 md:px-0 lg:px-8">
+    <section className="py-12 max-w-7xl mx-auto container px-4 md:px-0 lg:px-8" id="depoimentos">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-icarus-dark-blue">
           Uma Plataforma {" "}
