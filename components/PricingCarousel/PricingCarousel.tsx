@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRef } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5"
 import { Button } from "@/../components/ui/button"
 import PricingCard from "./PricingCard"
@@ -101,8 +102,33 @@ export default function PricingCarousel() {
     return `translateX(-${currentIndex * 100}%)`
   }
 
+  const touchStartX = useRef<number | null>(null);
+const touchEndX = useRef<number | null>(null);
+
+const handleTouchStart = (e: React.TouchEvent) => {
+  touchStartX.current = e.touches[0].clientX;
+};
+
+const handleTouchMove = (e: React.TouchEvent) => {
+  touchEndX.current = e.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  if (!touchStartX.current || !touchEndX.current) return;
+
+  const distance = touchStartX.current - touchEndX.current;
+
+  if (distance > 50) nextSlide();     // Swipe para a esquerda
+  if (distance < -50) prevSlide();    // Swipe para a direita
+
+  // Reset
+  touchStartX.current = null;
+  touchEndX.current = null;
+};
+
+
   return (
-    <section className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto" id="servicos">
+    <section className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto" id="pricing-card">
       {/* Header */}
       <div className="md:text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-icarus-dark-blue">Traga seu negócio para a Icarus Roc hoje mesmo e <br /><span className="text-[#FFB703]">ganhe 1 mês de suporte grátis</span> </h2>
@@ -116,7 +142,7 @@ export default function PricingCarousel() {
         <Button
           variant="outline"
           size="icon"
-          className="cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white"
+          className="cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-icarus-gray"
           onClick={prevSlide}
         >
           <IoChevronBack className="h-4 w-4" />
