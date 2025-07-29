@@ -79,7 +79,7 @@ export default function ContactForm() {
   const additionalServices = ["Portal de Conteúdo / Blog", "Hospedagem + Domínio", "Automação com Scripts", "Performance e Responsividade"]
 
   return (
-    <section className=" bg-black">
+    <section className=" bg-black" id="contato">
       <div className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="bg-white p-8 md:p-12">
           {/* Header */}
@@ -206,8 +206,8 @@ export default function ContactForm() {
                 {/* Email Alternative */}
                 <p className="text-sm text-gray-600 pt-4">
                   Se preferir envie para o email{" "}
-                  <a href="mailto:me.envio@pix.com" className="text-[#FFB703] hover:underline">
-                    me.envio@pix.com
+                  <a href="contato@icarusroc.com" className="text-[#FFB703] hover:underline">
+                    contato@icarusroc.com
                   </a>
                 </p>
               </form>

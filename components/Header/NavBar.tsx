@@ -26,13 +26,13 @@ export default function NavBar() {
               <a href="#como-funciona" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Como Funciona</a>
             </li>
             <li>
-              <a href="#servicos" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Serviços</a>
+              <a href="#pricing-card" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Serviços</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Trabalhos</a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Contato</a>
+              <a href="#contato" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:hover:text-blue-600 md:p-0">Contato</a>
             </li>
           </ul>
         </div>
