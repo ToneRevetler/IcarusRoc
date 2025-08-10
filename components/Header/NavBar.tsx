@@ -11,7 +11,7 @@ export default function NavBar() {
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Icarus Roc</span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button type="button" className="cursor-pointer text-gray-900 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm px-4 py-2 text-center">Contato</button>
+          <a href="https://api.whatsapp.com/send/?phone=5519989587907&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20fiquei%20muito%20interessado(a)%20no%20trabalho%20de%20voc%C3%AAs.%20Gostaria%20de%20conversar%20sobre%20a%20possibilidade%20de%20desenvolvermos%20algo%20juntos.%20Podemos%20agendar%20um%20hor%C3%A1rio%20para%20falar?&type=phone_number&app_absent=0" className="cursor-pointer text-gray-900 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm px-4 py-2 text-center">Contato</a>
           <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <FaBars className="w-6 h-6" />
