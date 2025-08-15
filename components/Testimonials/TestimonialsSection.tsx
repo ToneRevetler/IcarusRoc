@@ -34,7 +34,7 @@ const testimonials = [
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-icarus-dark-blue">
           Uma Plataforma {" "}
-          <span className="text-[#FFB703]">Soluões Poderosas</span> Personalizadas
+          <span className="text-[#FFB703]">Soluções Poderosas</span> Personalizadas
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Junte-se a melhor e menor companhia de sites de Indaiatuba/SP
